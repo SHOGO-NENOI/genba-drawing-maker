@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { AppShell } from "./AppShell";
 import { CreateProjectPage } from "../features/projects/CreateProjectPage";
 import { EditorPage } from "../features/drawing/EditorPage";
 import { ProjectListPage } from "../features/projects/ProjectListPage";
 import { NotFoundPage } from "../components/common/NotFoundPage";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     element: <AppShell />,
     children: [

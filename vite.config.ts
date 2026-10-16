@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  base: "/genba-drawing-maker/",
   plugins: [
     react(),
     VitePWA({
@@ -15,7 +16,8 @@ export default defineConfig({
         theme_color: "#143d2b",
         background_color: "#f4f1e8",
         display: "standalone",
-        start_url: "/",
+        start_url: "/genba-drawing-maker/",
+        scope: "/genba-drawing-maker/",
         lang: "ja",
         orientation: "any",
         icons: [

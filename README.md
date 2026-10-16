@@ -2,6 +2,8 @@
 
 造園・土木・外構工事の現場写真に施工範囲、寸法、面積、注記を記入し、見積もり添付用の図面を作成するPWAです。
 
+公開版: https://shogo-nenoi.github.io/genba-drawing-maker/
+
 ## 現在の実装範囲（Phase 1）
 
 - Vite + React + TypeScript の基盤
@@ -27,6 +29,7 @@ npm run build
 
 - 画面遷移はReact Routerを使用します。
 - PWAは自動更新方式とし、アプリ本体をプリキャッシュします。
+- GitHub Pagesではサブパス配信と再読み込み時の404を避けるため、Hash Routerを使用します。
 - 画像形式はJPEG・PNG・WebPに限定します。
 - 座標は元画像ピクセル座標で保持する型設計です。
 - 実測面積は結果値だけでなく図形種別と入力寸法を保存します。
